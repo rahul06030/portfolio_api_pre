@@ -27,7 +27,7 @@ class Project(models.Model):
   description = models.TextField( )
   tools = models.CharField(max_length=200, blank=False, null=False)
   github = models.URLField()
-  hosted = models.URLField(null=True)
+  hosted = models.URLField(blank=True, null=True)
   image_url= models.CharField(max_length=500)
   date = models.DateField()
   updated_on = models.DateField(auto_now=True)
